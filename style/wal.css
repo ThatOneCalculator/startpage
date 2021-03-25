@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+@import url('./colors.css');
 
 @font-face {
 	font-family: 'Fira Code', monospace;
@@ -6,17 +7,17 @@
 
 /*Change font and colors*/
 :root {
-	--font: "Cartograph CF";
-	--bgcolor:  #1F1D29;
-	--linkcolor: #FFFFFF;
+	--font: "Fira Code";
+	--bgcolor:  var(--background);
+	--linkcolor: var(--color7);
 }
 
 /*-----------------------------------------------------------*/
 input {
     height: inherit;
     width: 680px;
-    background: #1F1D29;
-    color: #EABBB9;
+    background: var(--background);
+    color: var(--linkcolor);
     font: "Fira Code";
     font-weight: mono;
     line-height: 1.8em;
@@ -32,10 +33,10 @@ input {
 }
 body {
 /*
-	background-image: url('../background/bg.jpg');
+	background-image: var(--wallpaper);
 	background-repeat : no-repeat;
 */
-	background-color: #1F1D29;
+	background-color: var(--bgcolor);
 	background-size: cover;
 }
 
@@ -80,7 +81,7 @@ a {
 }
 
 a:hover {
-	color: #EA6F91;
+	color: var(--color5);
 }
 
 .time {
@@ -89,6 +90,6 @@ a:hover {
     font-size: 5.5rem;
     margin: 50px 0px 50px 0px;
     color: var(--linkcolor);
-	text-shadow: -5px 5px 0px #34738E, -10px 10px 0px #C3A5E6, -15px 15px 0px #9BCED7;
+	text-shadow: -5px 5px 0px var(--color2), -10px 10px 0px var(--color4), -15px 15px 0px var(--color1);
 }
 
